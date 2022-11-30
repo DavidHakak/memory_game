@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    height: 99vh;
+}
+
+#moreGame {
+    visibility: hidden;
+}
+
+#startGame {
+    visibility: visible;
+}
+
+.startGames {
+    height: 20vh;
+    width: 27vw;
+    background: linear-gradient(60deg,
+            rgba(255, 0, 0, 0.801),
+            rgba(0, 0, 255, 0.813),
+            rgba(0, 255, 0, 0.815),
+            rgba(255, 255, 0, 0.803));
+
+    margin: 20vw 0vw 0vw 36.5vw;
+    border-radius: 15px;
+    font-size: 7vh;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startGames:hover {
+    background: linear-gradient(60deg,
+            rgba(210, 1, 1, 0.801),
+            rgba(0, 0, 205, 0.813),
+            rgba(0, 164, 0, 0.815),
+            rgba(194, 194, 0, 0.803));
+}
+
+.startGames:active {
+    background: linear-gradient(60deg,
+            rgba(169, 0, 0, 0.801),
+            rgba(0, 0, 132, 0.813),
+            rgba(0, 93, 0, 0.815),
+            rgba(136, 136, 1, 0.803));
+}
+
+#formPlayers1,
+#formPlayers2 {
+    height: 26vh;
+    width: 40vw;
+    background: linear-gradient(60deg,
+            rgba(255, 0, 0, 0.628),
+            rgba(0, 0, 255, 0.671),
+            rgba(0, 128, 0, 0.632),
+            rgba(255, 255, 0, 0.425));
+    color: rgb(0, 0, 0);
+    padding: 0.9%;
+    border: 0.04px solid black;
+    border-radius: 8px;
+    font-size: 2vw;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 35vh;
+    left: 30vw;
+    visibility: visible;
+    flex-direction: column;
+    align-items: center;
+}
+
+#labelNumPlayers {
+    margin: 1% 0% 0% 0%;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numPlayers,
+#selectNumOfCards {
+    border-radius: 12px;
+    width: 100%;
+    height: 15%;
+    margin: 3% 0% 0% 0%;
+    padding: 3% 0% 3% 47%;
+    font-size: 1.5rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(157, 154, 154);
+    border: 0.5px solid black;
+    border-radius: 8px;
+    width: 20%;
+    height: 17%;
+    margin: 5% 0% 0% 0%;
+    padding: 0.3%;
+}
+
+#submit:hover {
+    background: rgb(110, 109, 109);
+}
+
+#submit:active {
+    background: rgb(64, 62, 62);
+}
+
+#param {
+    margin: 0.2vw 0.2vw 0.2vw 8.75vw;
+    border: 0.5px solid black;
+    height: 99.4vh;
+    width: 7vw;
+    background: linear-gradient(60deg,
+            rgba(255, 0, 0, 0.498),
+            rgba(0, 0, 255, 0.458),
+            rgba(0, 255, 0, 0.33),
+            rgba(255, 255, 0, 0.7));
+
+    display: flex;
+    flex-direction: column;
+}
+
+.listParam {
+    height: 80vh;
+    width: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    border-bottom: 0.06px solid black;
+}
+
+#moves {
+    height: 20vh;
+    width: 7vw;
+    background: rgba(184, 159, 159, 0.609);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+#player1 {
+
+    box-shadow: inset 30px 45px 100px 20px rgba(0, 0, 0, 0.691)
+}
+
+#bord {
+    width: 100vw;
+    height: 92vh;
+    padding: 0vw 0vw 0vw 0vw;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap
+}
+
+#pc {
+    box-sizing: border-box;
+    margin: 0vw 0vw 0vw 9vw;
+    width: 75vw;
+    height: 92vh;
+    background-image: url('/image/pc.png');
+    background-size: cover;
+
+}
+
+#img_cover {
+    width: 50vw;
+    height: 62vh;
+    margin: 6.5vw 0vw 0vw 12.5vw;
+    display: flex;
+}
+
+#bordImg {
+    padding: 2vw;
+    width: 50vw;
+    height: 61vh;
+    display: grid;
+}
+
+
+.image {
+    width: 3.7vw;
+}
+
+#bordCovers {
+    padding: 2vw;
+    width: 50vw;
+    height: 61vh;
+    display: grid;
+    position: absolute;
+    z-index: 2;
+}
+
+.covers {
+    background: rgb(0, 0, 0);
+    height: 3.9VW;
+    width: 3.9vw;
+    border-radius: 50px;
+}
+
+.covers:hover {
+    background: rgb(99, 99, 99);
+}
+
+.covers:active {
+    background: rgb(156, 156, 156);
+}
+
+
+#gifLike {
+    height: 10vh;
+    width: 5vw;
+    background: url('/image/like.webp');
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    left: 44vw;
+    top: 22vw;
+    visibility: hidden;
+}
+
+
+#gifFireworks {
+    width: 28vw;
+    height: 45vh;
+    background: url('/image/fireworks.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2;
+    left: 34vw;
+    top: 13vw;
+    visibility: hidden;
+}
